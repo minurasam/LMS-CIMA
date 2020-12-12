@@ -1,0 +1,206 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{% static 'vendor/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Student/Profilepage2.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/Student/student_dashboard.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Student/style.css' %}">
+</head>
+<body>
+    {% include 'Student/stdNavbar.html' %}
+    <div id="content">
+<div class="row"> 
+    <!-- basic section -->
+   <div class="col">
+    <section id="basic_sec" style="background-color: rgb(128, 119, 119); font-family: 'Times New Roman', Times, serif;">
+        <div class="basic">
+            <h2>MY PROFILE</h2>
+            <div class="pro_pic">
+                <img src="{% static 'img/student/Avatar.png' %}" alt="Profile Picture">
+                <input type="file" id="chngpic" style="visibility: hidden;">
+                <button type="button" class="btn btn-info btn-xs" onclick="$('#chngpic').click();">Change</button>   
+            </div>
+            <div class="control-btn">
+                <h3 class="pd">PERSONAL DETAILS</h3>
+                <h3 class="ad">ACADEMIC DETAILS</h3>                
+                <h3 class="pmd">PAYMENT DETAILS</h3>                
+                <h3 class="cp">CHANGE PASSWORD</h3>                
+            </div>
+        </div>
+    </section>
+   </div>
+
+    <!-- Personal Details -->
+
+    <section id="personal_sec" class="col-md-8">
+        <div class="personal">
+            <h3>PERSONAL DETAILS</h3>
+            <div class="details">
+                <div class="item">
+                    <label for="name">Name</label><span class="ans" id="fname">{{user.first_name}} {{user.last_name}}</span>
+                </div>
+                <div class="item">
+                    <label for="CIMA_ID">CIMA ID</label><span class="ans" id="cima_id">{{student.Cima_ID}}</span>
+                </div>
+                <div class="item">
+                    <label for="email">Email</label><span class="ans" id="email">{{user.email}}</span>
+                </div>
+                <div class="item">
+                    <label for="dob">Date of Birth</label><span class="ans" id="dob">{{student.dob}}</span>
+                </div>
+                <div class="item">
+                    <label for="numbre">Contact No</label><span class="ans" id="contact">{{student.contact_no}}</span>
+                </div>
+            </div>
+            <button type="button" class="btn btn-lg btn-primary editbtn">Edit Details</button>
+        </div>
+    </section>
+
+    <!-- editdetails -->
+
+    <div id="editdetails" class="col-md-8">
+        <div class="eddet">
+        <h3>Edit Details</h3>   
+        <form action="">
+            <div class="form-group">
+                <label for="fullname">Full Name</label><input class="form-control" id="fullname" type="text">
+            </div>
+            <div class="form-group">
+                <label for="addr">Address</label><input class="form-control" id="addr" type="text">
+            </div>
+            <div class="form-group">
+                <label for="em">Email</label><input class="form-control" id="em" type="text">
+            </div>
+            <div class="editbtn">
+                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                <button type="submit" class="btn btn-lg btn-danger">Cancel</button>
+            </div>    
+        </form>
+        </div>
+    </div>
+
+    <!-- Academic Details -->
+
+     <section id="academic_sec" class="col-md-8">    
+        <div class="academic">
+            <h3>Academic Details</h3>
+            <div class="details">
+                <div class="item">
+                    <label for="membership">Membership</label><span class="ans" id="membership">{{student.membership}}</span>
+                </div>
+                <div class="item">
+                    <label for="level">Level</label><span class="ans" id="level">{{student.level}}</span>
+                </div>
+                <div class="item">
+                    <label for="cid">Lecturer</label><span class="ans" id="lecturer">{{student.lecturer}}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Details -->
+
+    <section id="payment_sec" class="col-md-8">
+        <div class="payment">
+            <h3>Payment Details</h3>
+            <div class="details">
+                <div class="item">
+                    <label for="cid">Method</label><span class="ans" id="cid"></span>
+                </div>
+                <div class="item">
+                    <label for="membership">Cards</label><span class="ans" id="membership"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Change Password -->
+ 
+    <section id="chngpass_sec" class="col-md-8"> 
+        <div class="chngpass">
+            <h3>Change Password</h3>
+            <div class="cpass">
+                <div class="item">
+                    <form action="" class="passform">
+                        <div class="fitem form-group">
+                            <label for="cpassword">Current Password</label><input class="form-control" id="cpassword" type="text">
+                        </div>
+                        <div class="fitem form-group">
+                            <label for="newpassword">New Password</label><input class="form-control" id="newpassword" type="text">
+                        </div>
+                        <div class="fitem form-group">    
+                            <label for="cnewpassword">Confirm new Password</label><input class="form-control" id="cnewpassword" type="text">
+                        </div>
+                        <div class="text-right">    
+                            <button type="submit" class="btn btn-lg btn-primary passeditbtn">Submit</button>
+                        </div>   
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>   
+    </div>
+</div>
+    <script>
+        var personal=document.querySelector(".pd");
+        var academic=document.querySelector(".ad");
+        var payment=document.querySelector(".pmd");
+        var pass=document.querySelector(".cp");
+        var editbtn=document.querySelector(".editbtn");
+        
+        var personal_sec=document.querySelector("#personal_sec");
+        var academic_sec=document.querySelector("#academic_sec");
+        var payment_sec=document.querySelector("#payment_sec");
+        var chngpass_sec=document.querySelector("#chngpass_sec");
+        var editdetails=document.querySelector("#editdetails");
+        
+        function showPersonal(){
+            personal_sec.style.display="block";
+            academic_sec.style.display="none";
+            payment_sec.style.display="none";
+            chngpass_sec.style.display="none";
+            editdetails.style.display="none";
+        }
+        function showAcademic(){
+            personal_sec.style.display="none";
+            academic_sec.style.display="block";
+            payment_sec.style.display="none";
+            chngpass_sec.style.display="none";
+            editdetails.style.display="none";
+        }
+        function showPayment(){
+            personal_sec.style.display="none";
+            academic_sec.style.display="none";
+            payment_sec.style.display="block";
+            chngpass_sec.style.display="none";
+            editdetails.style.display="none";
+        }
+        function showPass(){
+            personal_sec.style.display="none";
+            academic_sec.style.display="none";
+            payment_sec.style.display="none";
+            chngpass_sec.style.display="block";
+            editdetails.style.display="none";
+        }
+        function showedit(){
+            personal_sec.style.display="none";
+            editdetails.style.display="block";
+        }
+        
+        personal.addEventListener("click",showPersonal);
+        academic.addEventListener("click",showAcademic);
+        payment.addEventListener("click",showPayment);
+        pass.addEventListener("click",showPass);
+        editbtn.addEventListener("click",showedit);
+    </script>
+    <script src="{% static 'vendor/js/jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'vendor/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

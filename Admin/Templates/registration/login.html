@@ -1,0 +1,35 @@
+
+{% extends "registration/Base.html" %}
+{% load static %}
+{% block title %}Log-in{% endblock %}
+
+{% block content %}
+  <div class="loginbox">
+    <img src="{% static 'general/assets/img/avatar.png' %}" class="user">
+    <h1> User Login</h1>
+      <div class="module">
+        {% if form.errors %}
+          <p>Your username and password didn't match. Please try again.</p>
+        {% endif %}
+        <div>
+          <form id="form" action="" method="POST">
+            {% csrf_token %}
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username..." class="form-control">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password "  class="form-control">
+            <input type="hidden" name="next" value="{{ next }}" />
+            <p><input type="submit" value="Log-in"></p>
+          </form>
+        </div>
+      </div>
+     
+      <p>
+        <a href="{% url 'register' %}" style="padding-left: 20px;">Sign up here  </a>
+        <a href="#" style="padding-left: 90px;"> Forgot Password?</a>
+      </p>
+      {% for message in messages %}
+      <p id="messages">{{message}}</p>
+    {% endfor %}
+    </div>
+{% endblock %}

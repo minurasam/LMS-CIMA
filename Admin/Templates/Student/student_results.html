@@ -1,0 +1,106 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Student Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/Student/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Student/student_dashboard.css' %}">
+  	<link rel="stylesheet" type="text/css" href="{% static 'css/Student/results.css' %}"> 
+  </head>
+
+  <body>
+		
+    <div class="wrapper d-flex align-items-stretch" style="background-size: 100%; background-image: url('https://storage.needpix.com/rsynced_images/green-sidelight-background.jpg');">
+      {% include 'Student/stdNavbar.html' %}
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2>Results Sheet</h2>
+        <div class="studentdetails">
+         <form>
+           <table class="details">
+             <tr>
+               <td>Registration Number</td>
+               <td>:</td>
+              <td>C2437</td>
+             </tr>
+
+             <tr>
+               <td>Full name</td>
+               <td>:</td>
+               <td>Kamal Fernando</td>
+             </tr>
+
+             <tr>
+               <td>Nic</td>
+               <td>:</td>
+               <td>974356432V</td>
+             </tr>
+
+             <tr>
+               <td>Level</td>
+               <td>:</td>
+               <td>Certificate Level</td>
+             </tr>
+
+             <tr>
+               <td>Year</td>
+               <td>:</td>
+               <td>2020</td>
+             </tr>
+           </table>
+         </form>
+        </div><!-- studentdetails -->
+
+        <div class="resultTable">
+          <table class="result">
+            <thead>
+              <tr>
+                <th width="140px">Course Code</th>
+                <th>Subject Name</th>
+                <th width="115px">Quiz</th>
+                <th width="115px">Case Study</th>
+                <th width="115px">Mock Exam</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BA1</td>
+                <td>Fundamentals of Business Economics</td>
+                <td>A</td>
+                <td>C+</td>
+                <td>A-</td>
+              </tr>
+              <tr>
+                <td>BA2</td>
+                <td>Fundamental of Management Accounting</td>
+                <td>B</td>
+                <td>B+</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>BA3</td>
+                <td>Fundamentals of Financial Accounting</td>
+                <td>C</td>
+                <td>B-</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td>BA4</td>
+                <td>Ethics, corporate governance and business law</td>
+                <td>A</td>
+                <td>C+</td>
+                <td>B</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+		</div>
+  </body>
+</html>

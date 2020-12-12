@@ -1,0 +1,86 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Student Details & Progress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static '/css/Admin/Edit%20Lectures/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Admin/exams.css' %}">
+  </head>
+  <body>
+		
+    {% include 'admin/navbar.html' %}
+    
+        <div id="content" class="p-4 p-md-5 pt-5"></div>
+        
+        <div>
+   
+<hr class="mark1">
+
+
+	<div class="page-content clearfix">
+		<div class="blocks">
+			<h1>Student Details & Progress</h1>
+			        <div class="page-content clearfix">
+            <div class="blocks">
+
+                <form class="forum">
+                    
+                    <div class="form-group">
+                        <label>Name of the Student : </label>
+                        <input type="text" name="Student-name" placeholder="Enter Student Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>CIMA Id : </label>
+                        <input type="text" name="Student-NIC" placeholder="Enter CIMA Id">
+                    </div>
+
+
+                </form>
+               
+
+            </div><!-- blocks -->
+
+            <div class="blocks">
+                <br><br>
+                <button name="details"><a href="All Student information.html">Load Student Details & Progress</a></button>
+                <button name="details">Print Details</button>
+
+            </div><!-- blocks -->
+        
+        </div><!-- page-content -->
+
+
+		</div><!-- blocks -->
+
+		
+	</div><!-- page-content -->
+	
+
+	<footer class="clearfix">
+		<div class="z1">Copyrights &copy; CIMA</div>
+
+		<img src="{% static 'img/admin/nav-logo.png' %}">
+
+		<div class="z2">Contact Us - www.cima.lk</div>
+
+	</footer>
+
+    <script type="text/javascript" src="{% static 'js/Admin/drop_form.js' %}"></script> 
+        </div>
+
+		</div>
+      <script src="js/selection.js"></script>
+  </body>
+</html>
+
+
+
+
+<!------ Include the above in your HEAD tag ---------->

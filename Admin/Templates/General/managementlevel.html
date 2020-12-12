@@ -1,0 +1,107 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Management Level</title>
+    <link href="{% static 'general/assets/css/style.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'general/cimapage/style.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"> </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+        <body>
+      {% include 'General/navbar.html' %}
+      
+        <!----------certficate box-------------->
+        
+    <section id="mangbox">
+        <div class="container">
+            <h1>CIMA Management Level</h1>
+            <p>Art of Leading the shift<br/> Adaptability,Resistance, Transformation</p>
+</div>
+        </section>
+         <!---management level content----->
+        <section id="mangcontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+            <h2> CIMA Management Level</h2>
+                    <div class="mang-content">
+                    This is the second level of the CIMA Professional Qualification and comprises of three computer-based Objective Tests and one Case Study exam. The Management level translates the strategy decided on at higher levels and communicates it to lower levels for implementation. It monitors and reports on the implementation of the strategy, and ensures corrective action is taken when required. It has a medium-term focus.
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                <img src="{% static 'general/cimapage/images/management_level_2019.png' %}">
+                </div>
+            </div>
+            </div>
+         </section>
+        
+        <!-------CIMA management @ TCS------->
+            <section id="mangtcs">
+                <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+            <h2> CIMA Management Level @ TCS</h2>
+                    <div class="mang-tcs">
+                   Add why student chooses TCS
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                <img src="{% static 'general/cimapage/images/mangimg.jpg' %}">
+                </div>
+            </div>
+            </div>
+            </section>
+    </body>
+    <!---------Syllabus--------->
+    <section id="syllubusmang">
+    
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+            <h2> Syllabus</h2>
+                    <div class="syllbusmang-content">
+                       The three OTQ subjects at CIMA Management Level can be sat in any order and in any combination. Once the Objective Test Exams are completed, candidates can sit for their final examination at this level, CIMA Management Level Case Study, which is a three-hour online exam. Management Level Subjects Are:<br/>
+                  <a href="https://www.cimaglobal.com/Qualifications/Professional-Qualification/Management-level/">E2- Managing Performance</a> <br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/Professional-Qualification/Management-level/">P2- Advanced Management Accounting</a><br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/Professional-Qualification/Management-level/">F2- Advanced Financial Reporting</a><br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/Professional-Qualification/Management-level/">Management Case Study Exam (MCS)</a><br/>
+                         
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                     <h2>Course Fee</h2>
+                <ul class="list-group">
+  <li class="list-group-item">1 subject- Price</li>
+  <li class="list-group-item">2 subject- Price</li>
+  <li class="list-group-item">3 subject- Price</li>
+  <li class="list-group-item">case study- Price</li>
+  
+</ul>
+                </div>
+            </div>
+            </div>
+    
+    </section>
+    
+    <section id="intake">
+    <div class="container">
+        <h2> Certificate Level Intakes</h2>
+        Add intakes to a list<br/>
+        
+                <ul class="list-group">
+  <li class="list-group-item">intake 1- month</li>
+  <li class="list-group-item">intake 2- month</li>
+  
+</ul>
+        </div>
+    
+    
+    </section>
+    {% include 'General/footer.html' %}
+</body>
+</html>

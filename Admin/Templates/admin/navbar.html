@@ -1,0 +1,27 @@
+{% load static %}
+
+<div class="wrapper d-flex align-items-stretch" style="background-size: 100%; background-image: url('https://storage.needpix.com/rsynced_images/green-sidelight-background.jpg');">			
+    <nav id="sidebar">
+            <h1><a class="logo">E-Learning Dashboard</a></h1>
+      <ul class="list-unstyled components mb-5">
+        <li>
+          <a><span class="fa fa-user mr-3"></span> Hello, {{request.user}} </a>
+        </li>
+        <li>
+            <a href="{% url "admin" %}"><span class="fa fa-user mr-3"></span> Admin Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fa-leanpub mr-3"></span> Exams </a>
+        </li>
+        <li>
+          <a href="#"><span class="fa fa-list-alt mr-3"></span> Results </a>
+        </li>
+        <li>
+          <a href="{% url "v_students" %}"><span class="fa fa-graduation-cap mr-3"></span> Students </a>
+        </li>
+        <li>
+          <a href="{% url "logout" %}"><span class="fa fa-sign-out mr-3"></span> logout </a>
+        </li>
+      </ul>
+
+      </nav>

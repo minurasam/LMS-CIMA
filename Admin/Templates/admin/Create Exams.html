@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static '/css/Admin/style.css' %}">
+	<link rel="stylesheet" href="{% static '/css/Admin/Create-Exam.css' %}">
+
+    <title>E-learning Dashboard</title>
+    
+</head>
+<body>
+	{% include 'admin/navbar.html' %}
+  
+		  <!-- Page Content  -->
+		<div id="content" class="p-4 p-md-5 pt-5">
+			<div class="main_content">
+				<div class="flexbox-container">
+					<h1>Create Exam</h1>
+			
+			<table>
+				<tr>
+					<td style="text-align: right;"><label>Level :</label></td>
+					<td><select id="lecture-level" onchange="levelSelect()">
+							<option value ="none">--Select Level--</option>
+							<option value ="Level1">Certificate Level</option>
+							<option value ="Level2">Operational Level</option>
+							<option value ="Level3">Management Level</option>
+							<option value ="Level4">Strategic Level</option>
+						</select></td>
+					<td></td>
+					<td style="text-align: right;"><label>Exam Type :</label></td>
+					<td><select id="types">
+						<option value ="none">--Select Exam Type--</option>
+						<option value ="type-01">Mock Exam</option>
+						<option value ="type-02">MCQ</option>		
+					</select></td>					
+				</tr>
+
+				<tr>
+					<td style="text-align: right;"><label>Subject : </label></td>
+					<td><select id="lecture-subject">
+						<option value ="none">--Select Subject--</option>
+						<option id="BA1" value ="BA1" class="lvl1">BA1</option>
+						<option  id ="BA2" value ="BA2" class="lvl1">BA2</option>
+						<option  id ="BA3" value ="BA3" class="lvl1">BA3</option>
+						<option  id ="BA4" value ="BA4" class="lvl1">BA4</option>
+						<option id ="E1" value ="E1" class="lvl2">E1</option>
+						<option id ="P1" value ="P1" class="lvl2">P1</option>
+						<option id ="F1" value ="F1" class="lvl2">F1</option>
+						<option id ="E2" value ="E2" class="lvl3">E2</option>
+						<option id ="P2" value ="P2" class="lvl3">P2</option>
+						<option id ="F2" value ="F2" class="lvl3">F2</option>
+						<option id ="E3" value ="E3" class="lvl4">E3</option>
+						<option id ="P3" value ="P3" class="lvl4">P3</option>
+						<option id ="F3" value ="F3" class="lvl4">F3</option>
+					</select></td>
+					<td style="text-align: right;"><label>Upload CSV :</label></td>
+					<td><button id="upload">Upload</button></td>
+				</tr>
+
+			</table>
+
+			<div id="msg" style="opacity: 0; color: red;">Fill required fields.</div>
+			<button id="create" onclick="createExam();">Create</button>
+			
+			</div>
+		</div>
+	</div>
+	
+	</div>
+	<script src="{% static 'js/Admin/Create%Exams.js' %}"></script>
+
+</body>
+</html>

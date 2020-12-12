@@ -1,0 +1,20 @@
+{% load static %}
+
+<header id="header" style="background-color: black">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <h1><a class="scrollto">CIMA Levels</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="{% url "home" %}">Home</a></li>
+          <li><a class="nav-link" href="{% url "courses" %}">Overview</a></li>
+          <li><a class="nav-link" href="{% url "cert" %}">Certificate Level</a></li>
+          <li><a class="nav-link" href="{% url "oper" %}">Operational Level</a></li>
+          <li><a class="nav-link" href="{% url "mgt" %}"> Management Level</a></li>
+          <li><a class="nav-link" href="{% url "strat" %}">Strategic Level</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->

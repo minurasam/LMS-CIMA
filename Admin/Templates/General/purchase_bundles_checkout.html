@@ -1,0 +1,187 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purchase Bundle Checkout</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'general/assets/css/footer.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'general/assets/css/purchase_bundles_checkout.css' %}">
+  
+</head>
+
+<body>
+	<div style="background: #109E00;
+	padding: 20px;
+	margin-bottom: 50px;"></div>
+
+	<div class="content">
+
+		<div class="title">
+			<img src="{% static 'general/assets/img/tcs-logo.jpg' %}" width="100px" style="border-radius: 50%;"><span style="font-size: 40px; ">Total CIMA Solutions</span>
+		</div><!-- title -->
+
+		<h1>Checkout :</h1>
+		<h2 class="topics">Order Summary</h2>
+		
+		<table class="purchase-bundles">
+			<thead>
+				<tr>
+					<th class="item-head align-left">Item</th>
+					<th class="price-head align-center">Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="item">
+					<td class="item-description"><strong>FREE CIMA Operational Membership: E1, P1, F1 & OCS</strong><p>Free access to full OT study texts, mini mocks, samples and advice email newsletter</p></td>
+					<td class="align-center">$0.00</td>
+				</tr>
+				<tr class="item">
+					<td class="item-description"><strong>P1 Revision Notes</strong></td>
+					<td class="align-center">$9.89</td>
+				</tr>
+				<tr class="total">
+					<td class="align-right">Total</td>
+					<td class="align-center">$9.89</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 class="topics">Select Payment Method</h2>
+
+		<div class="get-payment-method">
+			<a href="#"><b>PayPal</b> <p>Pay as a guest or with your existing PayPal account using: Visa/Mastercard/American Express/Discover/Maestro</p></a>	
+		</div>
+		<div class="get-payment-method">
+			<a href="#"><b>Credit/Debit Card Payments</b> <p>Online credit & debit card processing (American Express not accepted)</p></a>
+		</div>
+		<div class="get-payment-method">
+			<a href="#"><b>Alternative Credit/Debit Card</b> <p>Use if unable to use other recommended providers above</p></a>	
+		</div>
+		<div class="get-coupon-code">
+			<p style="margin-bottom: 5px; font-size: 20px;"><b>Coupon Code</b></p>
+			<input type="text" name="" style="padding: 5px;margin-right: 5px; border: 1px solid #B1CFB3; border-radius: 3px;"><button>Apply</button>
+		</div>
+
+
+		<h2 class="topics">Your Account Details</h2>
+
+		<div class="form-details">
+			If you already hava an account, please login here to continue: <b><u><a href="#">Login</a></u></b><br>
+			If you do not currently have an account,please complete the sign up form below.
+		</div><!-- form-details -->
+
+		<div class="form-block">
+			<form>
+				<table class="form-table" cellspacing="15px">
+					<tr>
+						<td class="align-right"><b>First & Last Names</b></td>
+						<td class="align-left"><input type="text" name="" placeholder="First Name"><input type="text" name="" placeholder="Last Name" style="margin-left: 10px;"></td>
+					</tr>
+					<tr>
+						<td class="align-right"><b>E-mail Address</b> <p>Confimation email will be sent to this email address</p></td>
+						<td class="align-left"><input type="email" name=""></td>
+					</tr>
+					<tr>
+						<td class="align-right"><b>Enter a Username</b> <p>Must be 6 or more characters in length & <br> only contain letters, numbers and underscores.</p></td>
+						<td class="align-left"><input type="text" name=""></td>
+					</tr>
+					<tr>
+						<td class="align-right"><b>Enter a Password</b>  <p>Must be 6 or more characters</p></td>
+						<td class="align-left"><input type="password" name=""></td>
+					</tr>
+					<tr>
+						<td class="align-right"><b>Confirm Password</b></td>
+						<td class="align-left"><input type="password" name=""></td>
+					</tr>
+					<tr>
+						<td class="align-right"><b>Country</b> </td>
+						<td class="align-left"><select>
+							<option value ="none">-Select Country-</option>
+							<option value ="srilanka">Sri Lanka</option>
+							<option>India</option>
+							<option>United States</option>
+							<option>Singapore</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><button>Next</button></td>
+					</tr>
+				</table>
+		
+			</form>
+
+		</div><!-- form-block -->
+
+	</div><!-- content -->
+
+
+
+	<div style="background: #109E00;
+	padding: 50px;
+	margin-top: 50px;"></div>
+
+	<!----------- Footer Start ------------>
+    
+    <footer class="ftfooter-bs">
+        <div class="ftrow">
+        	<div class="ftcol-md-3 ftfooter-brand animated fadeInLeft">
+            	<h2>CIMA</h2>
+                <p>The Chartered Institute of Management Accountants is a UK based professional body offering training and qualification in management accountancy and related subjects. It is focused on accountants working in industry, and provides ongoing support and training for members.</p>
+                <p>© 2020 TCS</p>
+            </div>
+        	<div class="ftcol-md-4 ftfooter-nav animated fadeInUp">
+            	<h4>Menu —</h4>
+            	<div class="ftcol-md-6">
+                    <ul class="ftpages">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Purchase</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+            	<div class="ftcol-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="ftcol-md-2 ftfooter-social animated fadeInUp">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        	<div class="ftcol-md-3 ftfooter-ns animated fadeInRight">
+            	<h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="ftinput-group">
+                      <input type="text" class="ftform-control" placeholder="Search for...">
+                      <span class="ftinput-group-btn">
+                        <button class="ftbtn ftbtn-default" type="button"><span class="ftglyphicon ftglyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;"><p> &copy; Copyright <strong>E-Learning Dashboard</strong>. All Rights Reserved</p></section>
+    
+
+<!-- 
+<script type="text/javascript" src="js/purchase_bundles_basket.js' %}"></script> -->
+
+</body>
+</html>

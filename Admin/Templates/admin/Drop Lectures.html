@@ -1,0 +1,124 @@
+{% load static %}
+<!-- SHOULD ADD SELECT ALL TO DROP COURSES-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Drop Lectures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static '/css/Admin/Edit%20Lectures/css/Grid.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Admin/Edit%20Lectures/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Admin/exams.css' %}">
+  </head>
+  <body>
+		
+    {% include 'admin/navbar.html' %}
+   
+<hr class="mark1">
+
+
+	<div class="page-content clearfix">
+		<div class="blocks">
+			<h1>Drop Lectures</h1>  
+
+			<form class="forum drop-forum">
+
+            <div class="row">  
+                
+                <div class="col span-1-of-3">
+                        <div class="form-group">
+                    
+					<label>Level</label>
+					<select id="alecture-level" onchange="dp_select()">
+						<option value ="none">None</option>
+						<option value ="Certificate Level">Certificate Level</option>
+						<option value ="Operational Level">Operational Level</option>
+						<option value ="Management Level">Management Level</option>
+						<option value ="Strategic Level">Strategic Level</option>
+					</select>
+                        </div>
+                </div>
+                
+                 <div class="col span-1-of-3">
+                     <div class="form-group">
+					<label>Subject</label>
+					<select id="subs">
+                            <option id="op1" value ="none">None</option>
+                            <option id="op2" value ="BA1" class="lvl1">BA1</option>
+                            <option id="op3" value ="BA2" class="lvl1">BA2</option>
+                            <option id="op4" value ="BA3" class="lvl1">BA3</option>
+                            <option id="op5" value ="BA4" class="lvl1">BA4</option>
+                            <option id="op6" value ="E1" class="lvl2">E1</option>
+                            <option id="op7" value ="P1" class="lvl2">P1</option>
+                            <option id="op8" value ="F1" class="lvl2">F1</option>
+                            <option id="op9" value ="E2" class="lvl3">E2</option>
+                            <option id="op10" value ="P2" class="lvl3">P2</option>
+                            <option id="op11" value ="F2" class="lvl3">F2</option>
+                            <option id="op12" value ="E3" class="lvl4">E3</option>
+                            <option id="op13" value ="P3" class="lvl4">P3</option>
+                            <option id="op14" value ="F3" class="lvl4">F3</option>
+                    </select>
+                     </div>
+                 </div>
+
+                 <div class="col span-1-of-3"> 
+                    <div class="form-group">
+                    <label>Module</label>
+                    <select id="lecture-module">
+						<option value ="none">None</option>
+						<option id="mo1" value ="M1" class="lvl1">M1</option>
+						<option id="mo2" value ="M2" class="lvl1">M2</option>
+						<option id="mo3" value ="M3" class="lvl1">M3</option>
+                    </select>
+                    </div>
+                </div>
+            </div>    
+                    
+                    <button type="button" name="" id="drop-button" onclick="subs_select();">Display</button>
+                
+
+                    <div id="drop_subs">
+            
+                        
+                        
+                    </div>
+                    
+                    
+			</form>
+			<button type="button" onclick="drop();" id="dbutton">Drop</button>
+
+
+		</div><!-- blocks -->
+
+		
+	</div><!-- page-content -->
+	
+
+	<footer class="clearfix">
+		<div class="z1">Copyrights &copy; CIMA</div>
+
+		<img src="{% static 'img/admin/nav-logo.png' %}">
+
+		<div class="z2">Contact Us - www.cima.lk</div>
+
+	</footer>
+        
+        </div>
+
+    </div>
+    <script src="{% static 'js/Admin/selection.js' %}"></script>
+    <script src="{% static 'js/Admin/table.js' %}"></script>
+    <script src="{% static 'js/Admin/jquery-3.5.1.min.js' %}"></script>
+
+  </body>
+</html>
+
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+

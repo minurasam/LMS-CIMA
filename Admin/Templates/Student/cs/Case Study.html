@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/Student/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/Student/carouselCaseStudy.css' %}">
+</head>
+<body>
+  <div class="wrapper d-flex align-items-stretch" style="background-size: 100%; z-index: 0; background-image: url('https://storage.needpix.com/rsynced_images/green-sidelight-background.jpg');">
+    {% include 'Student/stdNavbar.html' %}
+    
+  <div id="content" class="p-4 p-md-5 pt-5">
+
+    <div class="gallery">
+      <div class="gallery-container">
+        <a href=""><img class="gallery-item" src="http://fakeimg.pl/300/458b00/?text=Case Study 1"></a>
+        <a href=""><img class="gallery-item" src="http://fakeimg.pl/300/458b00/?text=Case Study 2"></a>
+        <a href=""><img class="gallery-item" src="http://fakeimg.pl/300/458b00/?text=Case Study 3"></a>
+        <a href=""><img class="gallery-item" src="http://fakeimg.pl/300/458b00/?text=Case Study 4"></a>
+        <a href=""><img class="gallery-item" src="http://fakeimg.pl/300/458b00/?text=Case Study 5"></a>
+      
+      </div>
+      <div class="gallery-controls"></div>
+    </div>
+ </div>
+</div>
+  <script src="{% static 'js/Student/carouselCaseStudy.js' %}"></script>
+</body>
+</html>

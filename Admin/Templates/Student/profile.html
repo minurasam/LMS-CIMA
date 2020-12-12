@@ -1,0 +1,142 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" href="{% static 'css/Admin/style.css' %}">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"> </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+    </head>
+    <style>
+      #id_first_name, #id_last_name, #id_email, #id_level, #id_membership, #id_lecturer, #id_Cima_ID, #id_contact_no, #id_dob{
+         display: block;
+         width: 100%;
+         height: calc(1.5em + 0.75rem + 2px);
+         padding: 0.375rem 0.75rem;
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.5;
+         color: #495057;
+         background-color: #fff;
+         background-clip: padding-box;
+         border: 1px solid #ced4da;
+         border-radius: 0.25rem;
+         -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+         transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+         -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; 
+     }
+    </style>
+      <body>
+     {% include 'Student/stdNavbar.html' %}
+     <div id="content" class="p-4 p-md-5 pt-5" style="margin: 10px 10px 10px 10px;">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="card">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col">
+                           <center>
+                              <img width="100px" src="{% static 'img/student/profile%20img.jpg' %}"/>
+                           </center>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col">
+                           <center>
+                              <h4>{{student.name}}</h4>
+                           </center>
+                        </div>
+                     </div>
+                     <br>
+                     <form  method="POST">
+                        {% csrf_token %}
+                     <div class="row">
+                        <div class="col-md-4">
+                           <label>First Name</label>
+                           <div class="form-group">
+                              {{ form1.first_name }}
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <label>Last Name</label>
+                           <div class="form-group">
+                              {{ form1.last_name }}
+                           </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                           <label>Date of Birth</label>
+                           <div class="form-group">
+                              {{form.dob}}
+                           </div>
+                        </div>
+                     </div>
+                     <br>
+                     <div class="row">
+                        <div class="col-md-4">
+                           <label>Contact No</label>
+                           <div class="form-group">
+                              {{form.contact_no}}
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <label>Email</label>
+                           <div class="form-group">
+                              {{ form1.email }}
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <label>CIMA ID</label>
+                           <div class="form-group">
+                              {{form.Cima_ID}} 
+                           </div>
+                        </div>
+                     </div>
+                     <br>
+                     <div class="row">
+                        <div class="col-md-4">
+                           <label>Level</label>
+                           <div class="form-group">
+                              {{form.level}}
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                           <label>Lecturer</label>
+                           <div class="form-group">
+                              {{form.lecturer}}
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                           <label>Membership Type</label>
+                           <div class="form-group">
+                              {{form.membership}}
+                          </div>
+                        </div>
+
+                     </div>
+                     <br>
+      <div class="row">
+
+         <div style="padding-left: 46%;">
+            <a class="btn btn-primary" role="button"><input type="submit" value="Submit"></a>
+         </div>
+      </div>  
+   </form>
+      </div>
+</div>
+                   </div>
+                </div>
+             </div>
+                </div>
+                  </div>
+              </body>
+</html>

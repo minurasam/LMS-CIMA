@@ -1,0 +1,42 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Student Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static '/css/Student/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Student/student_dashboard.css' %}">
+  	<link rel="stylesheet" href="{% static '/css/Student/lectures.css' %}"> 
+  </head>
+
+  <body>
+		  {% include 'Student/stdNavbar.html' %}
+         <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h1>My courses</h1>
+
+          <div class="course">
+            {% for course in object_list %}
+                  <div class="box1" style="position: relative;
+                  text-align: center;
+                  background: darkslategray;
+                  float: left;
+                  padding: 10px 10px 10px 10px;
+                  box-sizing: border-box;
+                  border-radius: 
+                  10px; width: 200px;">
+                    <h5 style="color: white;">{{ course.name }}</h5>
+                    <br>
+                    <h6><a href="{% url "student_course_detail" course.id %}">Access contents</a></h6>
+                  </div>
+            {% endfor %}
+            
+            </div>
+          </div>
+
+  </body>
+</html>

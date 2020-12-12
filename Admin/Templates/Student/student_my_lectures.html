@@ -1,0 +1,93 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Student Lectures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/Student/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Student/student_my_lectures.css' %}">
+
+  </head>
+
+  <body>
+    
+    <div class="wrapper d-flex align-items-stretch" style="background-size: 100%; background-image: url('https://storage.needpix.com/rsynced_images/green-sidelight-background.jpg');">
+      {% include 'Student/stdNavbar.html' %}
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+
+        <h2>My Lectures</h2>
+        <div class="table-content">
+
+          <h5 class="my-level">Certificate Level</h5>
+
+          <p class="avail1">Available files to download :</p>
+          <div class="row">
+            <div class="column">
+          <table align="" border="0" cellpadding="10px">
+
+          	<tr>
+          		<td>Busiiness Economics.mp4</td>
+          		<td><button>Download</button></td>
+            </tr>
+            <tr>
+          		<td>Busiiness Law and Ethics.mp4</td>
+          		<td><button>Download</button></td>
+            </tr>
+            <tr>
+          		<td>Management Accounting.mp4</td>
+          		<td><button>Download</button></td>
+          	</tr>
+          	<tr>
+          		<td>Financial Accounting.mp4</td>
+          		<td><button>Download</button></td>
+            </tr>
+          		<td></td>
+          		<td><button>Download All</button></td>
+          	</tr>
+          </table>
+        </div>
+        <div class="column">
+          <table align="" border="0" cellpadding="10px">
+
+          	<tr>
+          		<td>Busiiness Economics.pdf</td>
+          		<td><button>Download</button></td>
+            </tr>
+            <tr>
+          		<td>Busiiness Law and Ethics.pdf</td>
+          		<td><button>Download</button></td>
+            </tr>
+            <tr>
+          		<td>Management Accounting.pdf</td>
+          		<td><button>Download</button></td>
+          	</tr>
+          	<tr>
+          		<td>Financial Accounting.pdf</td>
+          		<td><button>Download</button></td>
+            </tr>
+          		<td></td>
+          		<td><button>Download All</button></td>
+          	</tr>
+          </table>
+        </div>
+        </div>
+   
+
+        </div><!-- table-content -->
+        
+
+        
+      </div><!-- content  -->
+
+    </div>
+  </body>
+</html>
+
+
+

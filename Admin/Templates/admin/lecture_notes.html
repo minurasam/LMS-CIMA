@@ -1,0 +1,133 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/Admin/style.css' %}">
+</head>
+<style>
+  h5 {
+    color: white;
+  }
+  th {
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  td {
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .card {
+      background-color: rgb(97, 165, 91); 
+  }
+
+  .card-header {
+      padding-top: 10px;
+  }
+
+  .card-title{
+      font-weight: bold;
+      font-size: 30px;
+  }
+
+  #label {
+      font-size: medium;
+      font-weight: bold; 
+      color: black;
+  }
+  
+  #level {
+      padding: 5px 5px 5px 5px;
+  }
+  #course {
+      padding: 5px 5px 5px 5px;
+  }
+
+</style>
+<body>
+{% include 'admin/navbar.html' %}
+     <div class="p-4 p-md-5 pt-5" id="content">
+            <div class="row">
+                  <div class="col-md">
+                      <div class="card text-center text-white mb-2" >
+                          <div class="card-body">
+                            <table class="table" id="myTableData">
+                              <i><h5 class="card-title">Certificate Level</h5></i>
+                              {% for i in level1 %}
+                                <tr>
+                                  <td>{{i.course_id}}</td>
+                                  <td>{{i.name}}</td>
+                                  <td><a href="{% url 'crsmod_update' i.id %}" class="btn btn-secondary btn-sm">Add</a></td>
+                                </tr>
+                              {% endfor %}
+                            </table>
+                          </div>
+                      </div>
+                  </div>
+              <div class="col-md">
+                      <div class="card text-center text-white mb-2" >
+                          <div class="card-body">
+                            <table class="table" id="myTableData">
+                              <i><h5 class="card-title">Operational Level</h5></i>                             
+                              {% for i in level2 %}
+                                <tr>
+                                  <td>{{i.course_id}}</td>
+                                  <td>{{i.name}}</td>
+                                  <td><a href="{% url 'crsmod_update' i.id %}" class="btn btn-secondary btn-sm">Add</a></td>
+                                </tr>
+                              {% endfor %}
+                            </table>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+<br>
+<br>
+          <div class="row">
+                <div class="col-md">
+                    <div class="card text-center text-white mb-2" >
+                      <div class="card-body">
+                        <table class="table" id="myTableData">
+                          <i><h5 class="card-title">Management Level</h5></i>
+                          {% for i in level3 %}
+                            <tr>
+                              <td>{{i.course_id}}</td>
+                              <td>{{i.name}}</td>
+                              <td><a href="{% url 'crsmod_update' i.id %}" class="btn btn-secondary btn-sm">Add</a></td>
+                            </tr>
+                          {% endfor %}
+                        </table>
+                      </div>
+                    </div>
+                </div>
+               <div class="col-md">
+                    <div class="card text-center text-white mb-2" >
+                      <div class="card-body">
+                        <table class="table" id="myTableData">
+                          <i><h5 class="card-title">Strategic Level</h5></i>
+                          {% for i in level4 %}
+                            <tr>
+                              <td>{{i.course_id}}</td>
+                              <td>{{i.name}}</td>
+                              <td><a href="{% url 'crsmod_update' i.id %}" class="btn btn-secondary btn-sm">Add</a></td>
+                            </tr>
+                          {% endfor %}
+                        </table>
+                      </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+  </body>
+  </html>
+

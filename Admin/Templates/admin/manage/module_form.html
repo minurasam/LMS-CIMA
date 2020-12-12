@@ -1,0 +1,96 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/Admin/style.css' %}">
+</head>
+<style>
+  label{
+    color: black;
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    background: #F1FFF2;
+    height: 100px;
+    font-style: italic;
+    color: #000;
+    font-size: 16px;
+    margin: 5px 0 20px 10px;
+    width: 500px;
+  }
+  input input[type="checkbox" i] {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: initial;
+    cursor: default;
+    appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+  input input[type="password"], input[type="text"] {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    font-style: italic;
+    background: #F1FFF2;
+    height: 35px;
+    color: #000;
+    font-size: 16px;
+    margin: 5px 0 20px 10px;
+    width: 500px;
+}
+  #button {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 0 0 100px 100px;
+    background: darkslategrey;
+    color: rgb(238, 219, 219);
+    font-weight: bold;
+
+  }
+
+</style>
+<body>
+  {% include 'admin/navbar.html' %}
+<div id="content" class="p-4 p-md-5 pt-5">
+    <div  class="card text-left" style="width: min-content; margin: auto; padding: 30px 30px 30px 30px; background-color: rgb(125, 200, 131);">
+    <div class="card-header" style="background-color: darkgreen;">
+      <i><h3 style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">{{ course.name }}</h3></i>
+    </div>
+    <h4 style="font-weight: bold;">Course modules</h4>
+    <div class="module" style="padding-top: 20px;">
+        <form action="" method="post">
+          <div class="col-lg-4">
+            {{ formset }}
+          </div>
+          {{ formset.management_form }}
+ 
+          {% csrf_token %}
+          <input type="submit" id="button" value="Save Modules">
+        </form>
+      </div>
+  
+  </div>
+</div>
+<body>
+</html>

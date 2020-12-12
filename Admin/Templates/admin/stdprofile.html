@@ -1,0 +1,46 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>E-Learning Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static '/css/Admin/Edit%20Lectures/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Admin/exams.css' %}">
+    
+  </head>
+  <body>
+	
+    {% include 'admin/navbar.html' %}
+
+    <div id="content" class="p-4 p-md-5 pt-5">
+		  <div>
+			<h1>Student List</h1>
+		  </div>
+		  	<div class="table-responsive">          
+			  <table class="table" id="myTableData">
+				  <tr style="background-color: cornflowerblue; color: white;">
+					<th>#</th>
+					<th>CIMA ID</th>
+					<th>Name</th>
+					<th>Level</th>
+					<th>Email</th>
+				  </tr>
+				{% for studs in students %}
+				<tr>
+				  <td>{{studs.id}}</td>
+				  <td>{{studs.Cima_ID}}</td>
+				  <td>{{studs.name}}</td>
+				  <td>{{studs.level}}</td>
+				  <td>{{studs.email}}</td>
+				</tr>
+				{% endfor %}
+			  </table>
+			</div>
+			
+		</div>
+	</body>
+</html>

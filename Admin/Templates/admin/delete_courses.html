@@ -1,0 +1,24 @@
+{% extends 'admin/main.html' %}
+
+{% block content %}
+
+<div id="create-lecture-form" class="p-4 p-md-5 pt-5">
+    <div class="card text-center mb-4" style="width: fit-content; margin: auto; padding: 30px 30px 30px 30px; background-color: rgb(6, 56, 105);">
+    
+        <p style="font-size: large;
+        font-family: Arial, Helvetica, sans-serif; 
+        color: rgb(248, 247, 247);
+        font-weight: bold;">Are you sure you want to delete <mark style="color: rgb(28, 133, 185);">"{{course}}"</mark>?</p>
+        
+        <form action="{% url 'del_course' course.id %}" method="POST">
+
+                {% csrf_token %}
+
+            <a class="btn btn-info" href="{% url 'v_courses' %}">Cancel</a>
+            <input type="submit" name="Confirm" class="btn btn-danger">
+
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

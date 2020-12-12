@@ -1,0 +1,106 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Operational Level</title>
+    <link href="{% static 'general/assets/css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'general/cimapage/style.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"> </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+        <body>
+      {% include 'General/navbar.html' %}
+        <!----------certficate box-------------->
+        
+    <section id="opbox">
+        <div class="container">
+            <h1>CIMA Operational Level</h1>
+            <p>Be a Business Leader Not a Number Cruncher</p>
+</div>
+        </section>
+         <!---operational level content----->
+        <section id="opcontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+            <h2> CIMA Operational Level</h2>
+                    <div class="op-content">
+                     This is the first level of the CIMA Professional Qualification and comprises of three computer-based Objective Tests and one Case Study exam. Students will learn how to prepare financial statements, provide management accounting information and use appropriate tools for decision making through a broad understanding of business.
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                <img src="{% static 'general/cimapage/images/cima-operational-level.png' %}">
+                </div>
+            </div>
+            </div>
+         </section>
+        
+        <!-------CIMA operational @ TCS------->
+            <section id="optcs">
+                <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+            <h2> CIMA Operational Level @ TCS</h2>
+                    <div class="op-tcs">
+                   Add why TCS Op is special
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                <img src="{% static 'general/cimapage/images/student.jpg' %}">
+                </div>
+            </div>
+            </div>
+            </section>
+    </body>
+    <!---------Syllabus--------->
+    <section id="syllubusop">
+    
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+            <h2> Syllabus</h2>
+                    <div class="syllbusop-content">
+                        The three OTQ subjects at CIMA Operational Level can be sat in any order and in any combination. Once the Objective Test Exams are completed, candidates can sit for their final examination at this level, CIMA Operational Level Case Study, which is a three-hour online exam. Operational Level Subjects Are:<br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/Professional-Qualification/Operational-level/"> E1-Managing Finance in a Digital World</a> <br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/Professional-Qualification/Operational-level/">P1- Management Accounting</a><br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/Professional-Qualification/Operational-level/">F1 -Financial Reporting</a><br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/Professional-Qualification/Operational-level/">Operational Level Case Study ( OCS )</a><br/>
+                         
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                     <h2>Course Fee</h2>
+                <ul class="list-group">
+  <li class="list-group-item">1 subject- Price</li>
+  <li class="list-group-item">2 subject- Price</li>
+  <li class="list-group-item">3 subject- Price</li>
+  <li class="list-group-item">case study- Price</li>
+  
+</ul>
+                </div>
+            </div>
+            </div>
+    
+    </section>
+    
+    <section id="intakeop">
+    <div class="container">
+        <h2> Operational Level Intakes</h2>
+        Add intakes to a list<br/>
+        
+                <ul class="list-group">
+  <li class="list-group-item">intake 1- month</li>
+  <li class="list-group-item">intake 2- month</li>
+  
+</ul>
+        </div>
+    
+    
+    </section>
+    {% include 'General/footer.html' %}
+</body>
+</html>

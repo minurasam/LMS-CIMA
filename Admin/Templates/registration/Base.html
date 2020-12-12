@@ -1,0 +1,30 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}Elearning Dashbaoard{% endblock %}</title>
+  <link href="{% static '/general/assets/css/Login_page.css' %}" rel="stylesheet">
+<body>
+  <div id="header" style="background-color: darkgreen; padding:10px 10px">
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <a href="{% url "home" %}" style="color: aliceblue">Elearning Dashbaoard</a>
+      </ul>
+    </nav>
+    </div>
+
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      { block; domready }
+      { endblock }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static '/css/Admin/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Admin/exams.css' %}">
+  <body>
+		
+    {% include 'admin/navbar.html' %}
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+       <h1 style="padding-left: 10px;">Exams</h1>
+        <div class="create-container">
+          <div class="create-exam">
+            <a href="Create Exams.html"><button><span class="fa fa-plus">Create Exam</span></button></a>
+          </div>
+        </div>
+        <!-- Table -->
+        <table id="tableExams">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Level</th>
+              <th>Subject</th>
+              <th>Exam Type</th>
+            </tr>
+          </thead>
+          <tbody>
+         
+          </tbody>
+        </table>
+
+
+           
+        </div>
+      
+		</div>
+    <script type="text/javascript" src="{% static 'js/Admin/exams.js' %}"></script>
+    
+  </body>
+</html>

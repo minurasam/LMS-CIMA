@@ -1,0 +1,27 @@
+{% extends 'admin/main.html' %}
+  
+  {% block content %}
+
+        <div class="flexbox-container">
+          <div class="row-1">
+            <button class="button button-1"><a id="a1" href="{% url "v_courses" %}"><h6 style="font-weight: bold; font-style: italic;">View Courses</h6></a></button>       
+            <button class="button button-1"><a id="a1" href="{% url "addNotes" %}"><h6 style="font-weight: bold; font-style: italic;">Add Modules to Courses</h6></a></button>
+            <button class="button button-1"><a id="a1" href="{% url "view_content" %}"><h6 style="font-weight: bold; font-style: italic;">View Content</h6></a></button>
+            <button class="button button-1"><a id="a1" href="{% url "edit_stud" %}"><h6 style="font-weight: bold; font-style: italic;">Edit Students</h6></a></button>
+          </div>  
+          <div class="row-2">
+            <button class="button button-1"><a id="a1" href="#"><h6 style="font-weight: bold; font-style: italic;">Lecturer Admin Panel</h6></a></button>
+            <button class="button button-1"><a id="a1" href="#"><h6 style="font-weight: bold; font-style: italic;">Purchases History</h6></a></button> 
+            <button class="button button-1"><a id="a1" href="#"><h6 style="font-weight: bold; font-style: italic;">Student Details & Progress</h6></a></button>
+            <button class="button button-1"><a id="a1" href="#"><h6 style="font-weight: bold; font-style: italic;">Upload Case Study Details</h6></a></button>
+          </div>
+
+      </div>
+
+          
+  {% endblock content %}
+    
+   
+
+
+

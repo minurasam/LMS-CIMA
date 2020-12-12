@@ -1,0 +1,105 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Certificate Level</title>
+    <link href="{% static 'general/assets/css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'general/cimapage/style.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"> </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+    <body>
+      {% include 'General/navbar.html' %}
+        
+    <section id="certbox">
+        <div class="container">
+            <h1>CIMA Certificate Level</h1>
+            <p>Our friendly writing and presentation style makes it easy for you to make a start on your CIMA qualification with terminology introduced in a simple, understandable way that is focused on what you need to learn for the exam.</p>
+</div>
+        </section>
+         <!---certificate level content----->
+        <section id="certcontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+            <h2> CIMA Certificate Level</h2>
+                    <div class="cert-content">
+                    The CIMA Certificate in Business Accounting is your first step towards becoming a Chartered Global Management Accountant (CGMA). It’s open for students after O/Ls and A/Ls. CIMA Cert BA will equip the future CGMAs with a solid understanding of accounting, management and business principles to kick-start a career in the world of business and finance.
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                <img src="{% static 'general/cimapage/images/cima_certificate_level_overview.png' %}">
+                </div>
+            </div>
+            </div>
+         </section>
+        
+        <!-------CIMA certficate @ TCS------->
+            <section id="certtcs">
+                <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+            <h2> CIMA Certificate Level @ TCS</h2>
+                    <div class="cert-tcs">
+                   Add why student chooses TCS
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                <img src="{% static 'general/cimapage/images/certlecturepic.jpg' %}">
+                </div>
+            </div>
+            </div>
+            </section>
+    </body>
+    <!---------Syllabus--------->
+    <section id="syllubus">
+    
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+            <h2> Syllabus</h2>
+                    <div class="syllbus-content">
+                        There are four subjects in the Certificate level that can be sat in any order. Subjects are as follows,<br/>
+                  <a href="https://www.cimaglobal.com/Qualifications/cert-ba/BA1/">BA1- Fundamentals Of Business Economics</a> <br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/cert-ba/BA2/">BA2-Fundamentals of Management Accounting</a><br/>
+                        <a href="https://www.cimaglobal.com/Qualifications/cert-ba/BA3/">BA3-Fundamentals of Financial Accounting</a><br/>
+                       <a href="https://www.cimaglobal.com/Qualifications/cert-ba/BA4/">BA2-Fundamentals of Ethics, Corporate Governance and Business Law</a><br/>
+                         
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                     <h2>Course Fee</h2>
+                <ul class="list-group">
+  <li class="list-group-item">1 subject- Price</li>
+  <li class="list-group-item">2 subject- Price</li>
+  <li class="list-group-item">3 subject- Price</li>
+  <li class="list-group-item">4 subject- Price</li>
+  
+</ul>
+                </div>
+            </div>
+            </div>
+    
+    </section>
+    
+    <section id="intake">
+    <div class="container">
+        <h2> Certificate Level Intakes</h2>
+        Add intakes to a list<br/>
+        
+                <ul class="list-group">
+  <li class="list-group-item">intake 1- month</li>
+  <li class="list-group-item">intake 2- month</li>
+  
+</ul>
+        </div>
+    
+    
+    </section>
+    {% include 'General/footer.html' %}
+    </body>
+</html>

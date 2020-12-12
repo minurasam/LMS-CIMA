@@ -1,0 +1,116 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/Admin/style.css' %}">
+</head>
+<style>
+    h3{
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .card {
+        background-color: rgb(104, 105, 110); 
+    }
+  
+    .card-header {
+        padding-top: 10px;
+    }
+
+    .card-title{
+        font-weight: bold;
+        font-size: 30px;
+    }
+  
+    #label {
+        font-size: medium;
+        font-weight: bold; 
+        color: black;
+    }
+    
+    #level {
+        padding: 5px 5px 5px 5px;
+    }
+    #course {
+        padding: 5px 5px 5px 5px;
+    }
+
+</style>
+<body>
+    {% include 'admin/navbar.html' %}
+    <div class="p-4 p-md-5 pt-5" id="content">
+        <form method="post" id='indexform' data-courses-url="{% url 'courses_dropdown' %}">
+            <div class="row">
+            <div class="col">
+                <div class="col-md">
+                    <div class="card text-center text-white mb-2" >
+                        <div class="card-body">                      
+                            <i><h5 class="card-title">Choose CIMA Level</h5></i>
+                            <select name="level" id="level" class="form-control">
+                                <option disabled selected="true">--Select Option--</option>
+                                {% for i in levels %}
+                                    <option value="{{i.level}}">{{i.level}}</option>
+                                {% endfor %}
+                           </select>
+                        </div>
+                    </div>
+                </div>
+                
+                   
+            </div>
+        </div>
+    </form>
+        <form method="post" id='indexform2' data-courses-url1="{% url 'std_list' %}">
+        <h3>Students</h3>
+		
+        <div class="table-responsive" style="align-content: center;">          
+          <table class="table" id="myTableData">
+              
+              
+          </table>
+        </div>        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $("#level").change(function()
+        {
+            var url = $("#indexform").attr("data-courses-url");
+            var levelvar = $(this).val();
+            
+            $.ajax({
+                url: url,
+                data: {
+                    'level': levelvar
+                },
+                success: function(data){
+                    $("#courses").html(data);
+                }
+            });
+        });
+        $("#level").change(function()
+        {
+            var url = $("#indexform2").attr("data-courses-url1");
+            var levelvar = $(this).val();
+            
+            $.ajax({
+                url: url,
+                data: {
+                    'level': levelvar
+                },
+                success: function(data){
+                    $("#myTableData").html(data);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

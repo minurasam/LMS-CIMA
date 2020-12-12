@@ -1,0 +1,12 @@
+<tr style="background-color: cornflowerblue; color: white;">
+    <th>CIMA ID</th>
+    <th>Name</th>
+    <th>&nbsp;</th>
+  </tr>
+{% for i in students %}
+              <tr>
+                  <td>{{i.Cima_ID}}</td>
+                  <td>{{i.name}}</td>
+                  <td><a href="">Delete</a></td>
+              </tr>
+{% endfor %}

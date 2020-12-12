@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- style sheets -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static '/css/Admin/notes-videos.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Admin/exams.css' %}">
+    <script>
+            function random_function()
+            {
+                var a=document.getElementById("input").value;
+                if(a==="ALL")
+                {
+                    var arr=["BA1","BA2","BA3","BA4","E1","P1","F1","E2","P2","F2","E3","P3","F3"];
+                }
+        
+        else if(a==="Certificate Level")
+                {
+                    var arr=["BA1","BA2","BA3","BA4"];
+                }
+                else if(a==="Operational Level")
+                {
+                    var arr=["E1","P1","F1"];
+                }
+         else if(a==="Management Level")
+                {
+                    var arr=["E2","P2","F2"];
+                }
+         else if(a==="Strategic Level")
+                {
+                    var arr=["E3","P3","F3"];
+                }
+        
+             
+             
+                var string="";
+             
+                for(i=0;i<arr.length;i++)
+                {
+                    string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
+                }
+                document.getElementById("output").innerHTML=string;
+            }
+        </script>
+
+  </head>
+  <body>
+    
+    {% include 'admin/navbar.html' %}
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <div class="flexbox-container">
+          <h1>Add video lecture </h1>
+          <div class="row-1">
+      
+      <label>Level : </label>
+      <select id="input" onchange="random_function()">
+           <option value ="ALL">All</option>
+       <option value ="Certificate Level">Certificate Level</option>
+            <option value ="Operational Level">Operational Level</option>
+            <option value ="Management Level">Management Level</option>
+            <option value ="Strategic Level">Strategic Level</option>
+        </select>
+
+          <div class="row-2">
+     <label>Subject : </label>
+           <select id="output" onchange="random_function1()">
+        
+           </select> 
+
+         </div>
+          <div class="row-3">
+              <label>Add Video : </label>
+            <input type="file" name="lecture-vedio">
+
+          </div>
+
+          
+        <div class="row-4">
+           <label>Description : </label>
+            <textarea name="message" id="" cols="60" rows="8" placeholder="special notes"></textarea>
+            
+        </div>
+
+        <div class="row-5">
+          <button class="button button-1"><a id="a1" href="">Upload Video</a></button>
+        </div>
+        
+
+      </div>
+    </div>
+  </body>
+</html>
+
+

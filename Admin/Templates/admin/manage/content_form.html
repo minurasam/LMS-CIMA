@@ -1,0 +1,74 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- style sheets -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{% static '/css/Admin/style.css' %}">
+</head>
+<style>
+  label{
+    color: black;
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  textarea {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    background: #F1FFF2;
+    height: 200px;
+    font-style: italic;
+    color: #000;
+    font-size: 16px;
+    margin: 5px 0 20px 10px;
+    width: 500px;
+  }
+  input input[type="text"]{
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    font-style: italic;
+    background: #F1FFF2;
+    height: 25px;
+    color: #000;
+    font-size: 16px;
+    margin: 5px 0 20px 10px;
+    width: 500px;
+  }
+  .button {
+    border-radius: 50%;
+  }
+
+
+</style>
+<body>
+  {% include 'admin/navbar.html' %}
+<div id="content" class="p-4 p-md-5 pt-5">
+    <div  class="card text-left" style="width: fit-content; margin: auto; padding: 30px 30px 30px 30px; background-color: rgb(125, 200, 131);">
+        <h1>
+            {% if object %}
+              Edit content "{{ object.title }}"
+            {% else %}
+              Add a new content
+            {% endif %}
+          </h1>
+          <div class="module">
+            <h2>Course info</h2>
+            <form action="" method="post" enctype="multipart/form-data">
+              {{ form.as_p }}
+              {% csrf_token %}
+              <p><input type="submit" value="Save content"></p>
+            </form>
+          </div>
+</div>
+<body>
+</html>

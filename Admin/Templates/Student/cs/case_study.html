@@ -1,0 +1,84 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Case Study</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/caseStudycss/student_dashboard.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/lectures.css">  -->
+    <link rel="stylesheet" href="{% static 'css/Student/caseStudycss/Grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Student/caseStudycss/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Student/caseStudycss/mystyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Student/caseStudycss/bootstrap.css' %}">
+  </head>
+
+  <body>
+		
+    <div class="wrapper d-flex align-items-stretch" style="background-size: 100%; background-image: url('https://storage.needpix.com/rsynced_images/green-sidelight-background.jpg');">
+      {% include 'Student/stdNavbar.html' %}
+      
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+      <!-- title -->
+      <div class="row">
+        <div class="col">
+          <h1>Case Study</h1>
+          <h3>Subject_Name</h3>
+          <h5><em>Duration</em></h5>
+        </div>
+      </div>
+      <!-- sub-content -->
+      <div class="row">
+        <!-- student details -->
+        <div class="colmain span-1-of-2">
+          <div class="row">
+            <div class="col">
+              <label>First Name</label><br>
+              <input type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>CIMA Id</label><br>
+              <input type="text">
+            </div>
+          </div>
+        </div>
+        <!-- buttons -->
+        <div class="col span-1-of-2">
+          <div class="row">
+            <div class="colbtn span-1-of-2">
+              <div class="rowbtn">
+                <a href="case_study_exam.html"><button class="btn-success">Start Exam</button></a>
+              </div>
+              <div class="rowbtn">
+                <button class="btn-success">Exam Details</button>
+              </div>  
+            </div>
+            <div class="colbtn span-1-of-2">
+              <div class="rowbtn">
+                <button class="btn-success">Rules</button>
+              </div>
+              <div class="rowbtn">  
+                <button class="btn-success">Pre Seen</button>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="clearfix">
+        <div class="z1">Copyrights &copy; CIMA</div>
+    
+        <img src="{% static 'img/student/nav-logo.png' %}">
+    
+        <div class="z2">Contact Us - www.cima.lk</div>
+    
+      </footer>      
+    </div>
+  </body>
+</html>

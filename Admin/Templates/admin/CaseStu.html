@@ -1,0 +1,88 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/Admin/style.css' %}">
+    <link rel="stylesheet" href="{% static '/css/Admin/exams.css' %}">
+	
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+	
+</head>
+<body>
+    {% include 'admin/navbar.html' %}
+
+    <!-- Page Content  -->
+    <div class="p-4 p-md-5 pt-5" id="content">
+      
+	  <h1>Case Study Details</h1>
+			
+	  
+                    <table cellpadding=5 cellspacing=10 height=20% id="table1" width=100%>
+                        
+						
+						<tr>
+                            <th align="left"><input class="dele" onclick="delete1_row('1')" type="button" value="Upload Pree Seen"></th>
+                            <th align="left"><input class="dele" onclick="delete1_row('1')" type="button" value="Upload Rules and Regulation"></th>
+							<th align="left"><input class="dele" onclick="delete1_row('1')" type="button" value="Upload Question CSV"></th>
+                        </tr>
+						
+						<tr>
+                            <th align="left">Pree Seen</th>
+                            <th align="left">Rules and Regulations</th>
+							<th align="left">Questions</th>
+                        </tr>
+
+                        <tr id="row1">
+                            <td id="ps_row1">File 1</td>
+                            <td id="rr_row1">File 1 RR</td>
+							<td id="qs_row1">File 1 QNS</td>
+                            <td>
+                                
+                                <input class="delete" onclick="delete1_row('1')" type="button" value="Delete">
+                            </td>
+                        </tr>
+
+                        <tr id="row2">
+                            <td id="ps_row2">File 2</td>
+                            <td id="rr_row2">File 2 RR</td>
+							<td id="qs_row2">File 2 QNS</td>
+                             <td>   
+                                <input class="delete" onclick="delete1_row('2')" type="button" value="Delete">
+                            </td>
+                        </tr>
+
+                        <tr id="row3">
+                            <td id="ps_row3">File 3</td>
+                            <td id="rr_row4">File 3 RR</td>
+							<td id="qs_row3">File 3 QNS</td>
+                            <td>
+                                <input class="delete" onclick="delete1_row('3')" type="button" value="Delete">
+                            </td>
+                        </tr>
+						
+						<tr id="row4">
+                            <td id="ps_row4">File 4</td>
+                            <td id="rr_row4">File 4 RR</td>
+							<td id="qs_row4">File 4 QNS</td>
+                            <td>
+                                <input class="delete" onclick="delete1_row('4')" type="button" value="Delete">
+                            </td>
+                        </tr>
+
+
+                    </table>
+
+   
+</div>
+</div>
+
+</body>
+</html>
+

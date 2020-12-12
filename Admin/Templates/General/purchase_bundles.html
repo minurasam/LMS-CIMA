@@ -1,0 +1,123 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Purchase Bundles</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'general/assets/css/footer.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'general/assets/css/purchase_bundles.css' %}">
+</head>
+<body>
+	<div style="background: #109E00;
+	padding: 20px;
+	margin-bottom: 50px;"></div>
+
+	<div class="content">
+
+		<div class="title">
+			<img src="{% static 'general/assets/img/tcs-logo.jpg' %}" width="100px" style="border-radius: 50%;"><span style="font-size: 40px;">Total CIMA Solutions</span>
+			
+		</div><!-- title -->
+
+		<h1>Your Basket :</h1>
+		
+		<table class="purchase-bundles">
+			<thead>
+				<tr>
+					<th class="item-head align-left">Item</th>
+					<th class="price-head align-center">Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="item">
+					<td class="item-description"><span onclick="" class="delete">✕ </span>
+						<strong>FREE CIMA Operational Membership: E1, P1, F1 & OCS</strong><p>Free access to full OT study texts, mini mocks, samples and advice email newsletter</p></td>
+					<td class="align-center">$0.00</td>
+				</tr>
+				<tr class="item">
+					<td class="item-description"><span onclick="" class="delete">✕ </span>
+						<strong>P1 Revision Notes</strong></td>
+					<td class="align-center">$9.89</td>
+				</tr>
+				<tr class="total">
+					<td class="align-right">Total</td>
+					<td class="align-center">$9.89</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="actions">
+			<a href="#"><p style="margin-bottom: 10px; margin-top: 10px;">Enter Discount Code</p></a>
+
+			<a href="purchase_bundles_checkout.html"><button type="button" name="">Checkout</button></a>
+			<a href="More.html"><button type="button" name="">Continue Shopping</button></a>		
+		</div><!-- actions -->
+
+	</div><!-- content -->
+
+	<div style="background: #109E00;
+	padding: 50px;
+	margin-top: 50px;"></div>
+
+	<!----------- Footer Start ------------>
+    
+    <footer class="ftfooter-bs">
+        <div class="ftrow">
+        	<div class="ftcol-md-3 ftfooter-brand animated fadeInLeft">
+            	<h2>CIMA</h2>
+                <p>The Chartered Institute of Management Accountants is a UK based professional body offering training and qualification in management accountancy and related subjects. It is focused on accountants working in industry, and provides ongoing support and training for members.</p>
+                <p>© 2020 TCS</p>
+            </div>
+        	<div class="ftcol-md-4 ftfooter-nav animated fadeInUp">
+            	<h4>Menu —</h4>
+            	<div class="ftcol-md-6">
+                    <ul class="ftpages">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Purchase</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+            	<div class="ftcol-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="ftcol-md-2 ftfooter-social animated fadeInUp">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        	<div class="ftcol-md-3 ftfooter-ns animated fadeInRight">
+            	<h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="ftinput-group">
+                      <input type="text" class="ftform-control" placeholder="Search for...">
+                      <span class="ftinput-group-btn">
+                        <button class="ftbtn ftbtn-default" type="button"><span class="ftglyphicon ftglyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;"><p> &copy; Copyright <strong>E-Learning Dashboard</strong>. All Rights Reserved</p></section>
+    
+
+
+<!-- <script type="text/javascript" src="{% static 'general/assets/js/purchase_bundles_basket.js"></script>
+<script type="text/javascript" src="{% static 'general/assets/js/purchase_bundles.js"></script> -->
+</body>
+</html>

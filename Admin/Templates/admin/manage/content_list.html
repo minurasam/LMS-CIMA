@@ -1,0 +1,130 @@
+{% load static %}
+{% load course %}
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- style sheets -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{% static '/css/Admin/style.css' %}">
+</head>
+<style>
+  .h1 {
+    position: relative;
+    background-color: green;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+  .edit {
+   background-color: white;
+  }
+  .module {
+    width: fit-content; 
+    padding: 30px 30px 30px 30px;
+  }
+  .contents {
+    background-color: rgb(104, 105, 110);
+    width: fit-content; 
+    padding: 10px 10px 10px 10px;
+  }
+  .module-contents {
+    border: 10px;
+    color: black;
+    border-color: black;
+    border-style: dotted;
+    border-width: 2px;
+    padding: 10px 30px 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    width: 100%;
+  }
+
+  #modules {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: start;
+    width: fit-content; 
+    padding: 10px 10px 10px 30px;
+  }
+  @media screen and (max-width: 600px) {
+    .col {
+      width: 100%;
+    }
+  }
+  input[type="submit"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-color: aquamarine;
+    color:blue;
+    border: none;
+    outline:none;
+  }
+</style>
+<body>
+{% include 'admin/navbar.html' %}
+<div id="content" class="p-4 p-md-5 pt-5">
+{% with course=module.course %}
+  <h1 class='h1'>Course "{{ course.name }}"</h1>
+  <div class='row'>
+    <div class="col-sm-2">
+      <div class="contents">
+        <h3>Modules</h3>
+        <ul id="modules">
+          {% for m in crs %}
+            <li data-id="{{ m.id }}" {% if m == module %}class="selected"{% endif %}>
+              <a href="{% url "module_content_list" m.id %}">
+                {{ m.module_name }}
+              </a>
+            </li>
+          {% empty %}
+            <li>No modules yet.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="module">
+        <h2>{{ module.module_name }}</h2>
+        <h4>Module contents:</h4>
+        <div id="module-contents">
+          {% for content in module.contents.all %}
+            <div data-id="{{ content.id }}">
+              {% with item=content.item %}
+            
+              <div class="module-contents">
+                <p>{{ item }} (
+                {{ item|model_name }})</p>
+                <a style="float: left; padding-right: 40px; color: blue;" href="{% url "module_content_update" module.id item|model_name item.id %}">Edit</a>
+                <form action="{% url "module_content_delete" content.id %}" method="post">
+                  <input type="submit" value="Delete">
+                  {% csrf_token %}
+                </form>
+              </div>
+              {% endwith %}
+            </div>
+          {% empty %}
+            <p>This module has no contents yet.</p>
+          {% endfor %}
+        </div>
+        <hr>
+        <h3>Add new content:</h3>
+        <ul>
+          <li style="float: left; padding-right: 40px;"><a href="{% url "module_content_create" module.id "image" %}">Image</a></li>
+          <li style="float: left; padding-right: 40px;"><a href="{% url "module_content_create" module.id "video" %}">Video</a></li>
+          <li style="float: left;"><a href="{% url "module_content_create" module.id "file" %}">File</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endwith %}
+</div>
+<body>
+    </html>
+    
