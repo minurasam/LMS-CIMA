@@ -47,12 +47,21 @@
             </div>
             </div>
             <div class="modules">
+                <div class="row">
                 {% for content in modules.contents.all %}
                     {% with item=content.item %}
-                        <h2>{{ item.title }}</h2>
+                    <div class="box1" style="position: relative; text-align: center;
+                    background: darkslategray;
+                    padding: 10px 10px 10px 10px;
+                    box-sizing: content-box;
+                    border-radius: 10px; width: fit-content;">
+                        <h2 style="align-items: center;">{{ item.title }}</h2>
+                                                
                         {{ item.render }}
+                    </div>
                     {% endwith %}
                 {% endfor %}
+            </div>
             </div>
         </div>
 </body>
