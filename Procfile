@@ -1,1 +1,1 @@
-web: gunicorn elearningDash.wsgi.py --log-file -
+web: gunicorn elearningDash.wsgi --log-file -
