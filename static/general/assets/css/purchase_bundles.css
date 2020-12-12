@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: #B9FFA3;
+}
+
+button {
+	border: 0.5px solid #9C9C9C;
+	padding: 4px 10px;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #474747;
+	background: linear-gradient(#FCFCFC,#F2F2F2,#DBDBDB);
+}
+
+button:hover {
+	color: #404040;
+	cursor: pointer;
+	background: linear-gradient(#40E8A9,#35C28D);
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+.content {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .content {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .content {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .content {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .content {
+      max-width: 1140px; } 
+}
+
+
+.title {
+	margin-left: 25%;
+	margin-bottom: 40px;
+	font-variant: small-caps;
+}
+
+h1 {
+	margin-left: 3%;
+}
+
+.purchase-bundles {
+	margin: auto;
+	width: 80%;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.purchase-bundles .item-description {
+	font-family: Tahoma;
+	font-size: 16px;
+}
+
+.delete {
+ 	font-weight: bold;
+ 	margin-right: 7px;
+}
+.delete:hover {
+	color: red;
+	cursor: pointer;
+}
+
+
+.purchase-bundles thead tr th {
+  	border-bottom: 1px solid #B1CFB3;
+  	padding: 10px 10px 20px 0;
+}
+
+.price-head{
+	margin-left: 20px;
+}
+
+.purchase-bundles tbody td {
+	border-bottom: 1px dashed #B1CFB3;
+	padding: 10px 10px 5px 0;
+}
+
+.purchase-bundles tbody td p {
+	font-size: 14px;
+	color: #708574;
+}
+
+
+.purchase-bundles .total {
+	font-weight: bold;
+}
+
+.actions {
+	margin-left: 15%;
+	font-size: 18px;
+}
+.actions button {
+ 	margin-left: 10px;
+}
+
+
+
+
+.underFooter {
+	width: 1000px;
+	margin: auto;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	border-top: 2px solid grey;
+	padding: 5px 20px 0px 20px;
+	opacity: 0.4;
+}
+
+.underFooter .z1 {
+	float: left;
+}
+
+.underFooter img {
+	height: 25px;
+	border-radius: 50%;
+	margin-left: 250px;
+	opacity: 0.4;
+}
+
+.underFooter .z2 {
+	float: right;
+}
