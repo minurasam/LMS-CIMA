@@ -277,7 +277,7 @@ def std_lectures(request):
 @login_required(login_url='login')
 @allowed_users(allowed_roles=['Student'])
 def student(request):
-    obj = get_object_or_404(Student, user=request.sAdmin_uer)
+    obj = get_object_or_404(Student, user=request.user)
     std = Student.objects.get(user=request.user)
     form = ProfileCreationForm()
     form1 = ProfileCreationForm2()
