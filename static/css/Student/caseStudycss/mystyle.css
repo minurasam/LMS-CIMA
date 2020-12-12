@@ -1,0 +1,23 @@
+button
+{
+    height: 80px;
+    width: 100%;
+}
+.colbtn {
+	display: block;
+	float:left;
+    margin: 1% 0 1% 0.5%;
+}
+.colmain {
+	display: block;
+	float:left;
+    margin: 1% 0 1% 7%;
+    width: 30%;
+}
+.rowbtn {
+    zoom: 1;
+    margin-bottom: 0.5%;
+}
+input{
+    width: 75%;
+}

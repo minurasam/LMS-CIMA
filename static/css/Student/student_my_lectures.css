@@ -1,0 +1,87 @@
+.clearfix {
+	overflow: auto;
+}
+
+
+#content h2 {
+	margin: auto;
+	margin: 0 40px 50px 40px;
+	padding-bottom: 30px;
+	text-align: center;
+	border-bottom: 1px solid grey;
+}
+
+.table-content {
+	color: black;
+	
+}
+
+.table-content .my-level {
+	margin-top: 50px;
+	background: #44DB00;
+	padding: 7px 0 7px 15px;
+}
+
+.avail {
+	width: 250px;
+	float: left;
+	margin-top: 20px;
+}
+
+.avail-para {
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 7px;
+}
+
+.table-content .subjects {
+	list-style: none;
+	padding: 7px 0px 7px 40px;
+	text-align: left;
+	background: #B9FFA5;
+	border-radius: 5px;
+}
+
+.avail1 {
+	width: 400px;
+	margin-top: 150px;
+	padding-left: 25px;
+	box-sizing: border-box;
+}
+
+.table-content table {
+	width: 400px;
+	margin-left: 180px;
+	border-radius: 5px;
+	background: #B9FFA5;
+}
+
+.table-content table tr {
+	border-bottom: 1px grey solid;
+}
+
+
+
+
+.footr {
+	width: 100%;
+	margin: auto;
+	margin-top: 150px;
+	border-top: 1px solid grey;
+	padding: 5px 20px 0px 20px;
+}
+
+.footr .z1 {
+	float: left;
+}
+
+.footr img {
+	height: 25px;
+	border-radius: 50%;
+	margin-left: 330px;
+	opacity: 0.4;
+}
+
+.footr .z2 {
+	float: right;
+}
