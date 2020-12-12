@@ -115,8 +115,7 @@ def admin(request):
 @allowed_users(allowed_roles=['Lecturer'])
 def view_courses(request):
     user = request.user
-    lecturer = Lecturer.objects.get(user=user.id)
-    courses = Course.objects.filter(lecturer=lecturer)
+    courses = Course.objects.filter(lecturer=user.lecturer)
     context = {'courses': courses}
     return render(request, 'admin/view_courses.html', context)
 
