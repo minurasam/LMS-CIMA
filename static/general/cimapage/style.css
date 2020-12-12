@@ -1,0 +1,307 @@
+
+/* navigation method*/
+#nav-bar{
+position: sticky;
+    top:0;
+    z-index: 10;
+    
+}
+.navbar-brand img{
+    height: 150px;
+    padding-left: 10px;
+    padding-top: 0px;
+    
+}
+.navbarNav li{
+    padding: 0 10px;
+}
+.navbarNav li a{
+   float: right;
+   text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: blue;
+}
+.navbar{
+    background: #fff;
+}
+.navbar-toggler{
+    border:none;
+}
+.nav-link{
+   color: blue;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+#slider{
+    width:100%;
+}
+.carousel-caption d-none d-md-block{
+    top: 50%;
+    transform: translate(-50%);
+    bottom: initial;
+    
+}
+
+/*---about CIMA-----*/
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555;
+}
+.about-content{
+    padding-top: 20px;
+}
+
+/*-------- certificate level---------*/
+#certificate{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+    
+}
+#certificate .btn{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.certificate-content{
+    padding-top: 20px;
+}
+#operational{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+    
+}
+#operational .btn{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.operational-content{
+      padding-top: 20px
+}
+#management{
+   padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+#management .btn{
+      margin-top: 50px;
+    margin-bottom: 30px;
+}
+.management-content{
+      padding-top: 20px
+}
+#strategic{
+   padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+#strategic .btn{
+      margin-top: 50px;
+    margin-bottom: 30px;
+}
+.strategic-content{
+      padding-top: 20px
+}
+
+
+/*---------container-----------*/
+#certbox{
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+ #certbox .container{
+    width:1000px;
+    height: 400px;
+    padding: 20px;
+    margin: 100px auto;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+    background-image: url(images/business%20image%20hand.jpg);
+    background-size: cover;
+}
+
+#certcontent{
+     padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+.cert-content{
+    padding-top: 20px;
+}
+
+/*----------cert@tcs-----------*/
+#certtcs{
+    padding-top: 50x;
+    padding-bottom: 50px;
+      color:#555; 
+}
+
+.cert-tcs{
+    padding-top: 50px;
+}
+
+/*-----------syllabus-----------*/
+#syllubus{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+.syllbus-content{
+    padding-top: 20px;
+}
+#syllubus .listgroup{
+    color: #555;
+}
+
+#intake{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+
+/*-------operational level page--------------*/
+#opbox{
+     padding-top: 30px;
+    padding-bottom: 30px;
+}
+#opbox .container{
+    width:1000px;
+    height: 400px;
+    padding: 20px;
+    margin: 100px auto;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+    background-image: url(images/stat.jpg);
+    background-size: cover;
+    color:ghostwhite;
+}
+
+#opcontent{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+
+.op-content{
+   padding-top: 20px; 
+}
+
+#optcs{
+     padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+.op-tcs{
+     padding-top: 20px;
+}
+
+#syllubusop{
+     padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+.syllbusop-content{
+    padding-top: 20px;
+}
+
+#intakeop{
+     padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+
+/*------- management level page----------*/
+#mangbox{
+  padding-top: 30px;
+    padding-bottom: 30px;   
+}
+#mangbox .container{ width:1000px;
+    height: 400px;
+    padding: 20px;
+    margin: 100px auto;
+ display: flex;
+  justify-content:space-around;
+  align-items:flex-end;
+    background-image: url(images/brains.jpg);
+    background-size: cover;
+    color: white;
+}
+#mangcontent{
+  padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+.mang-content{
+    padding-top: 20px;
+}
+
+#mangtcs{
+     padding-top: 100px;
+    padding-bottom: 100px;
+    color:#555; 
+}
+.mang-tcs{
+padding-top: 100px;
+}
+
+#syllubusmang{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+    }
+.syllbusmang-content{
+padding-top: 20px;
+}
+
+/*------------strategic level--------------*/
+#stratbox{
+    padding-top: 30px;
+    padding-bottom: 30px;  
+    
+}
+#stratbox .container{
+    width:1000px;
+       height: 400px;
+    padding: 20px;
+    margin: 100px auto;
+ display: flex;
+  justify-content:flex-start;
+  align-items:flex-end;
+    background-image: url(images/business-strategic-planning.jpg);
+    background-size: cover;
+   color:skyblue;
+}
+
+#stratcontent{
+      padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+.strat-content{
+     padding-top: 20px;
+}
+
+#strattcs{
+     padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+
+.strat-tcs{
+      padding-top: 20px;
+}
+
+#syllubusstrat{
+     padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555; 
+}
+.syllbusstrat-content{
+    padding-top: 20px;
+}
