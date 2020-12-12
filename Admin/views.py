@@ -81,7 +81,7 @@ def register(request):
 
 
 def home(request):
-    return render(request, 'Templates/General/general.html')
+    return render(request, 'Admin/Templates/General/general.html')
 
 
 def courses(request):
