@@ -24,8 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'zou^!o6y0+3!6lau5)pubt3!4o+(6e&8zl)_$nu1asb2dh1gzs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 ALLOWED_HOSTS = ['192.168.56.1', '127.0.0.1', 'lms-cima.herokuapp.com']
 
 
