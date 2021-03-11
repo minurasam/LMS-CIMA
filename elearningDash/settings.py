@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'elearningDash.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'LMSdashboard',
-        'USER': 'minuraSama',
-        'PASSWORD': 'Kandy1219',
-        "HOST": "database-1.curxepzb7bfj.us-east-2.rds.amazonaws.com",
+        'NAME': 'lmscima',
+        'USER': 'Minura',
+        'PASSWORD': 'bpyYEppcFU1mSlcpmARV',
+        "HOST": "lms-cima.cf01yipp20ui.us-east-1.rds.amazonaws.com",
         "PORT": '5432',
     }
 }
@@ -153,7 +153,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 AWS_ACCESS_KEY_ID = 'AKIA3TZTXJJPKQVELZTJ'
 AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'minura-lms-bucket'
+AWS_STORAGE_BUCKET_NAME = 'lms-cima'
 
 AWS_S3_FILE_OVERWRITE = False 
 AWS_DEFAULT_ACL = None
