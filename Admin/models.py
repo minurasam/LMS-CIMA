@@ -141,7 +141,7 @@ class Video(ItemBase):
 #     email = models.EmailField(max_length=200, null=True, blank=True)
 
 #     def __str__(self):
-#         return str(self.user)
+#          return str(self.user)
 
 
 # def create_profile(sender, instance, created, **kwargs):
@@ -159,4 +159,4 @@ class Video(ItemBase):
 #         print('Profile Updated')
 
 
-# post_save.connect(update_profile, sender=User)
+# # post_save.connect(update_profile, sender=User)
