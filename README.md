@@ -6,10 +6,10 @@ An E-Learning Platform for CIMA Students
 1. Clone the respository:
 
     ```
-    git clone https://github.com/minurasam123/MainDashboard.git
+    git clone https://github.com/minurasam/LMS-CIMA.git
     ```
-This will be an online website hosted by Google Cloud Hosting 
-(https://cloud.google.com/solutions/web-hosting#solutions)
+This will be an online website hosted by Heroku 
+https://dashboard.heroku.com/apps/lms-cima/deploy/github
 
 Install the requirements:
 
