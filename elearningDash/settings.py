@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'elearningDash.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'lmscima',
+        'NAME': 'lms-cima',
         'USER': 'Minura',
         'PASSWORD': 'bpyYEppcFU1mSlcpmARV',
         "HOST": "lms-cima.cf01yipp20ui.us-east-1.rds.amazonaws.com",
