@@ -83,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'lmscima',
         'USER': 'Minura',
-        'PASSWORD': 'bpyYEppcFU1mSlcpmARV',
+        'PASSWORD': '',
         "HOST": "lms-cima.cf01yipp20ui.us-east-1.rds.amazonaws.com",
         "PORT": '5432',
     }
@@ -149,12 +149,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # EMAIL_HOST_USER = "minura.samaranayake@gmail.com"
 # EMAIL_HOST_PASSWORD = "Kandy1219"
 
-#S3 BUCKET CONFIG
-
-AWS_ACCESS_KEY_ID = 'AKIA3TZTXJJPKQVELZTJ'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'lms-cima'
-
-AWS_S3_FILE_OVERWRITE = False 
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
