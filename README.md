@@ -197,7 +197,8 @@ Before getting started, ensure that you have the following installed on your dev
 ## Project Structure
 Below is a high-level overview of the repository’s key directories and files:
 
- LMS-CIMA/
+ ```
+LMS-CIMA/
 ├── .vscode/                # VSCode workspace settings (ignored in production)
 ├── Admin/                  # Django app for administrative functionality
 │   ├── migrations/         # Auto-generated migration files
@@ -230,4 +231,6 @@ Below is a high-level overview of the repository’s key directories and files:
 ├── requirements.txt        # Python package dependencies
 ├── runtime.txt             # Python runtime version for Heroku
 └── VENV/                   # (Optional) Virtual environment (typically gitignored)
+```
+
 
