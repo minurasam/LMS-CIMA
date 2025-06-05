@@ -191,5 +191,43 @@ Before getting started, ensure that you have the following installed on your dev
 ---
 
 ## Deployment
+ **NOT Configured**
 
-[... truncated for brevity in this explanation, but full content continues in the file below ...]
+
+## Project Structure
+Below is a high-level overview of the repository’s key directories and files:
+
+ LMS-CIMA/
+├── .vscode/                # VSCode workspace settings (ignored in production)
+├── Admin/                  # Django app for administrative functionality
+│   ├── migrations/         # Auto-generated migration files
+│   ├── templates/          # Admin-specific templates (e.g., course_list.html)
+│   ├── static/             # Admin-specific static assets (CSS/JS)
+│   ├── models.py           # Database models: Course, Module, Quiz, Question, etc.
+│   ├── views.py            # Views for CRUD operations on courses, modules, quizzes
+│   ├── urls.py             # URL routes for admin pages
+│   ├── admin.py            # Django admin site registration
+│   └── forms.py            # Forms for creating/updating content
+│
+├── elearningDash/          # Main Django project/configuration folder
+│   ├── settings.py         # Django settings (database, static/media, installed apps)
+│   ├── urls.py             # Root URL configurations
+│   ├── wsgi.py             # WSGI entry point for Gunicorn/Heroku
+│   └── asgi.py             # ASGI entry point (if needed)
+│
+├── media/                  # User-uploaded files (lecture PDFs, images, videos)
+│   ├── courses/            # Course-related media
+│   └── profile_pics/       # User profile images, if implemented
+│
+├── static/                 # Global static assets (CSS, JS, images)
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── manage.py               # Django’s command-line utility
+├── Procfile                # Heroku process declaration
+├── README.md               # This file
+├── requirements.txt        # Python package dependencies
+├── runtime.txt             # Python runtime version for Heroku
+└── VENV/                   # (Optional) Virtual environment (typically gitignored)
+
