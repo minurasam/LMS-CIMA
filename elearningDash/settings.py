@@ -25,8 +25,16 @@ SECRET_KEY = 'zou^!o6y0+3!6lau5)pubt3!4o+(6e&8zl)_$nu1asb2dh1gzs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['192.168.56.1', '127.0.0.1', 'lms-cima.herokuapp.com']
+ALLOWED_HOSTS = ['192.168.56.1', '127.0.0.1', 'localhost', 'lms-cima.herokuapp.com']
 
+# CSRF Settings for Django 4.2+
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'http://localhost:8000',
+    'http://192.168.56.1:8000',
+]
+CSRF_COOKIE_HTTPONLY = False
+CSRF_USE_SESSIONS = False
 
 # Application definition
 
