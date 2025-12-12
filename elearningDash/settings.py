@@ -80,17 +80,15 @@ WSGI_APPLICATION = 'elearningDash.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ElearningDashboard',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        "HOST": "localhost",
-        "PORT": '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# Uncomment below to use PostgreSQL or configure via DATABASE_URL environment variable
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+if db_from_env:
+    DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

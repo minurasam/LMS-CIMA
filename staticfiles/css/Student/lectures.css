@@ -1,0 +1,30 @@
+* {margin: 0; padding: 0;}
+a {text-decoration: none;}
+.clearfix { overflow: auto; }
+
+h2{
+	color: green;
+	padding-left: 310px;
+}
+
+.course {
+	position: relative;
+	width: 1000px;
+	height: 300px;
+	margin: 70px auto;
+	flex: auto;
+	text-align: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.box1 {
+	position: relative;
+	text-align: center;
+	background: darkslategray;
+	float: left;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+

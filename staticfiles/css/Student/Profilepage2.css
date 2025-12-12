@@ -1,0 +1,207 @@
+/* common */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* basic */
+#basic_sec{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.basic{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    /* margin-right: 4rem; */ */
+}
+.basic img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.basic .pro_pic{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: auto;
+    width: 6.5rem;
+}
+.basic .pro_pic button{
+    margin-left: 1.2rem;
+}
+.basic h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.basic .control-btn h3{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: large;
+}
+.basic .control-btn h3:hover{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+/* Personal Details */
+
+#personal_sec{
+    display: block;
+}
+.personal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+.personal .details{
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /* width: 50%; */
+}
+.personal h3{
+    border-bottom: solid rgb(57, 20, 117) 4px;
+    padding-bottom: 1rem;
+}
+.personal .details .item{
+    font-size: 1.4rem;
+}
+.personal .details .item .ans{
+    font-size: 1.2rem;
+    padding-left: 5rem;
+}
+.personal .details .item #address{
+    padding-left: 6.2rem;
+}
+.personal .details .item #email{
+    padding-left: 7.87rem;
+}
+
+
+/* Academic Details */
+
+#academic_sec{
+    display: none;
+}
+.academic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+.academic .details{
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /* width: 55rem; */
+}
+.academic h3{
+    border-bottom: solid rgb(57, 20, 117) 4px;
+    padding-bottom: 1rem;
+}
+.academic .details .item{
+    font-size: 1.4rem;
+}
+.academic .details .item .ans{
+    font-size: 1.2rem;
+    padding-left: 7rem;
+}
+.academic .details .item #membership{
+    padding-left: 4.24rem;
+}
+.academic .details .item #level{
+    padding-left: 8.9rem;
+}
+/* Payment Details */
+
+#payment_sec{
+    display: none;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+.payment .details{
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /* width: 55rem; */
+}
+.payment .details .item{
+    font-size: 1.4rem;
+}
+.payment h3{
+    border-bottom: solid rgb(57, 20, 117) 4px;
+    padding-bottom: 1rem;
+}
+/* Change Password */
+
+#chngpass_sec{
+    display: none;
+}
+.chngpass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+.chngpass h3{
+    border-bottom: solid rgb(57, 20, 117) 4px;
+    padding-bottom: 1rem;
+}
+.cpass{
+    margin-left: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-right: 10rem;
+    padding-left: 6rem;
+    width: 55rem;
+}
+/* editdetails */
+
+#editdetails{
+    display: none;
+    width: 30rem;
+    height: 30rem;
+    /* z-index: 1; */
+}
+.eddet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+.eddet h3{
+    border-bottom: solid rgb(57, 20, 117) 4px;
+    padding-bottom: 1rem;
+}
+.eddet form{
+    margin-left: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-right: 10rem;
+    padding-left: 6rem;
+    width: 55rem;
+}
+.eddet form .editbtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.eddet form .editbtn button{
+    margin: 1rem;
+}

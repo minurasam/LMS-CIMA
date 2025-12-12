@@ -1,0 +1,292 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+body {
+	background: #EBEDEA;
+}
+
+
+
+nav {
+	position: fixed;
+	left: 13.5%;
+	width: 1100px;
+	margin: auto;
+	margin-top: 10px;
+	background: linear-gradient(#09C905,#07A805,#068C04);
+	border-radius: 5px;
+	
+}
+
+nav img {
+	float: left;
+	height: 60px;
+	margin: 20px 0 20px 60px;
+	border-radius: 50%;
+}
+
+nav .nav-menu {
+	float: right;
+	font-size: 20px;
+	color: black;
+}
+
+nav .nav-menu ul {
+	list-style: none;
+}
+
+nav .nav-menu ul li {
+	display: inline-block;
+	margin: 40px 0 20px 40px;
+
+}
+
+nav .nav-menu ul li:last-child {
+	margin-right: 40px;
+}
+
+nav .nav-menu ul li:last-child a {
+	border: 1px #E3D5D9 solid;
+	padding: 8px 10px;
+	border-radius: 10px;
+}
+
+nav .nav-menu ul li:last-child a:hover {
+	border-radius: 5px;
+	border: 1px white solid;
+	color: white;
+}
+
+nav .nav-menu ul li a {
+	text-transform: uppercase;
+	color: black;
+}
+
+nav .nav-menu ul li a:hover {
+	color: white;
+}
+
+
+
+header {
+	letter-spacing: 2px;
+	width: 1000px;
+	margin: auto;
+	padding-top: 105px;
+}
+
+header .header-text {
+	padding: 60px 0 0 0;
+	font-size:20px;
+	font-variant: small-caps;
+	float: left;
+}
+
+header img {
+	height: 150px;
+	float: right;
+	margin: 20px 0;
+	padding: 0;
+	border-radius: 10px;
+}
+
+
+
+.mark1 {
+	width: 50px;
+	height: 3px;
+	margin: auto;
+	margin-bottom: 20px;
+	background: #88E087;
+	border-top: none;
+	border-bottom: none;
+	border-left: 100px #DDF7DA  solid;
+	border-right: 100px #DDF7DA solid;
+
+}
+
+
+.page-content {
+	background: #BFD6BD;
+	margin: auto;
+	width: 1500px;
+	padding: 20px 0px 30px 0px;
+	border-radius: 7px;
+}
+
+.page-content h1 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: normal;
+	border-bottom: 2px solid grey; 
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+}
+
+
+.blocks {
+	padding: 0px 0px 0 0px;
+	margin: 20px 20px;
+	width: 710px;
+	box-sizing: border-box;
+	font-size: 20px;
+	float: left;
+}
+
+.forum label {
+	display: block;
+}
+
+.forum input[type = "text"] ,.forum input[type = "date"] , .forum input[type = "time"] , .forum input[type = "file"] ,.forum textarea , .forum select {
+	font-size: 18px;
+	text-align: center;
+	padding: 5px 5px 5px 10px;
+	border-radius: 10px;
+	border: none;
+	margin-left: 60px;
+	margin-top: 10px;
+	width: 350px;
+	background: #DDF7DA;
+}
+
+.forum input[type = "checkbox"] {
+	margin-left: 20px;
+}
+
+.forum textarea {
+	height: 130px;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+.droping {
+	list-style: none;
+	font-size: 18px;
+	text-align: center;
+	padding: 5px 5px 5px 10px;
+	border-radius: 10px;
+	border: none;
+	margin-left: 60px;
+	margin-top: 10px;
+	width: 350px;
+	background: #DDF7DA;
+}
+
+.blocks button {
+	width: 300px;
+	margin: 10px 0 10px 85px;
+	padding: 10px 0;
+	border: none;
+	border-radius: 25px;
+	background: #88E087;
+	font-size: 20px;
+}
+
+.blocks button:hover {
+	background: #3FFC00;
+	cursor: pointer;
+}
+
+.blocks-img {
+	width: 300px;
+	display: block;
+	margin: 20px 0px 0px 100px; 
+}
+
+
+
+
+.more-section {
+	width: 1200px;
+	margin: auto;
+	background: #DDF7DA;
+}
+
+.more-blocks {
+	width: 287.5px;
+	margin-left: 10px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.more-blocks ul {
+	list-style: none;
+	padding: 10px 20px 10px 20px;
+}
+
+.more-blocks ul li {
+	margin-bottom: 10px;
+	border-bottom: 1px solid grey;
+}
+
+.more-blocks ul li a::before {
+	content: "»  ";
+}
+
+.more-blocks ul li a {
+	color: green;
+}
+
+.more-blocks ul li a:hover {
+	color: orange;
+}
+
+.more-blocks p {
+	margin: 10px 0 0 20px;
+	color: green;
+}
+
+.more-table {
+	margin: auto;
+}
+
+.more-table img {
+	background: green;
+	padding: 7px;
+	border-radius: 10px;
+}
+
+.more-table img:hover {
+	background: orange;
+	border-radius: 5px;
+}
+
+
+
+
+
+footer {
+	width: 1000px;
+	margin: auto;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	border-top: 2px solid grey;
+	padding: 5px 20px 0px 20px;
+}
+
+footer .z1 {
+	float: left;
+}
+
+footer img {
+	height: 25px;
+	border-radius: 50%;
+	margin-left: 250px;
+	opacity: 0.4;
+}
+
+footer .z2 {
+	float: right;
+}

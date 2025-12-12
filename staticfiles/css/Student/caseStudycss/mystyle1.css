@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#cima-logo
+{
+    height: 20px;
+    width: 20px;
+}
+#cima{
+    margin-right: 250px;
+}
+#cima-contact{
+    margin-left: 180px;
+}
+footer
+{
+    margin-top: 50px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.bg-mystyle{
+    background-color: #8bf8a2;
+}
+hr{
+    background-color: black;
+}
+textarea{
+    width: 60%;
+    height: 150px;
+}
+label{
+    color: blue;
+    font-weight: bold;
+}
+#duration{
+    text-align: right;
+    margin-right: 130px;
+}
+#case{
+    text-align: center;
+}
+.textar{
+    text-align: center;
+}
+#name{
+    margin-left: 50px;
+}
+.cond{
+    margin-left: 50px;
+}
+h6{
+    text-align: right;
+    margin-right: 100px;
+}
+.textar label{
+    margin-right: 700px;
+}
+.bt{
+    margin-left: 650px;
+}
+#upper_part{
+    background-color: blanchedalmond;;
+}
+#hr1{
+    margin-top: 0;
+    margin-bottom: 15px;
+}

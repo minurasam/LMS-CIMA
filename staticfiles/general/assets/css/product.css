@@ -1,0 +1,75 @@
+*
+{ padding:0; margin:0;}
+		
+
+			/* Header */
+			#header { background:#fff; }
+			#header-inner { margin:0 auto; padding:0; width:970px;}
+
+			/* Feature */
+			.feature { background:rgb(8, 56, 2);padding:10px;}
+			.feature { margin:0px; width:100%; }
+			.feature h1 {color:#DAE9BC;font-size:28px; align-content: center;}
+
+			/* Feature1 */
+			.feature1 { background:rgb(3, 26, 1);padding:0px;}
+			.feature1 {margin:0px; width:100%; }
+			.feature1 h1{color:#DAE9BC;font-size:40px; align-content: center;}
+
+			
+			/* Feature2 */
+			.feature2 { background:rgb(25, 112, 14);padding:0px;}
+			.feature2 { margin:0px; width:100%; }
+			.feature2 h1 {color:#DAE9BC;font-size:32px; text-align: center;}
+
+			/* Feature3 */
+			.feature3 { background:rgb(3, 20, 1);padding:10px;}
+			.feature3 { margin:0px; width:100%; }
+			.feature3 h1 {color:#DAE9BC;font-size:32px; text-align:left;}
+			
+			
+			/* Feature4 */
+			.feature4 { background:rgb(8, 56, 2);padding:10px;}
+			.feature4 { margin:0px; width:100%; }
+			.feature4 h1 {color:#DAE9BC;font-size:28px; align-content: center;}
+
+			
+			
+            /* Content2 */
+			.content2 h3 { color: rgb(8, 8, 8); margin:20px ; padding:10px; background:rgb(170, 229, 151); text-align: center;}
+			.content2 h4 {text-align: center; font-size: 24px; color: rgb(23, 49, 7);}
+			.content2 h5 {text-align: center;}
+
+			/* Content3 */
+			.content3 h3 { color: rgb(8, 8, 8); margin:10px ; padding:5px;  text-align: center; font-size: 20px;}
+			.content3 h4 {text-align: center; font-size: 18px; color: rgb(16, 34, 5);}
+			.content3 button  { color: #000; background-color: rgb(191, 252, 204); font-size: 12px; padding:8px; margin:10px 60px;}
+			.content3 { background:rgb(175, 233, 150); color:rgb(117, 207, 43);}
+			.content3 .column { margin:25px; text-align:justify; float:left ; width: 25%;padding:10px;}
+			
+			/* Content4 */
+			.content4 .column { margin:25px; text-align:justify; float:left ; width: 18%;padding:10px;}
+			
+			/* Content5 */
+			.content5 .column { margin:25px; text-align:justify; float:left ; width:18%;padding:10px;}
+			
+			/* all */
+			#all { background:rgb(215, 231, 208); color:rgb(117, 207, 43);}
+			#all { margin:0px;  padding:20px;}
+			#all .column { margin:30px; text-align:justify; float:left; width: 220px;padding:0px;}
+
+			
+			/* Menu */
+			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
+			#top-nav ul { list-style:none; padding:0; height:37px; float:left;}
+			#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
+			#top-nav ul li a { display:block; margin:0; padding:8px 20px; color:rgb(128, 4, 0); text-decoration:none;}
+			#top-nav ul li.active a, #top-nav ul li a:hover { color:#BCCE98;}
+
+
+			/* Clear both sides to assist with div alignment  */
+			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+	
+            /*button*/
+			button {margin:5px; padding: 5px; background:rgb(10, 81, 114);font-size:20px; align-content: center; color: #fff;}
+			
